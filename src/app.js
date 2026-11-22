@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const { errorHandler } = require('quickroute');
 
 const userRoutes = require('./routes/userRoutes');
@@ -8,6 +9,9 @@ const orderRoutes = require('./routes/orderRoutes');
 const app = express();
 
 app.use(express.json());
+
+// Serve static UI from public/
+app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // Health Check Endpoint (Required for Render and monitoring)
 app.get('/health', (req, res) => {
