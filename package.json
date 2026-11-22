@@ -21,7 +21,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.13.0",
-    "quickroute": "file:../quickroute/quickroute-1.0.0.tgz"
+    "quickroute": "file:./quickroute-1.0.0.tgz"
   },
   "devDependencies": {
     "supertest": "^7.0.0"
