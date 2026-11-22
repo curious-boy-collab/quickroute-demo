@@ -1,0 +1,25 @@
+{
+  "name": "quickroute-demo",
+  "version": "1.0.0",
+  "description": "E-Commerce REST API Demo built using QuickRoute",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node src/scripts/seed.js"
+  },
+  "keywords": [
+    "quickroute",
+    "ecommerce",
+    "demo",
+    "express",
+    "mongoose"
+  ],
+  "author": "Nitin Jaiswal",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.0",
+    "quickroute": "file:../quickroute/quickroute-1.0.0.tgz"
+  }
+}
